@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<header class="top_header" id="topnavi">
+    <!--<img src="images/minu_Logo3.jpg" style="height:40px;"/>
+	 <img src="images/minu1.jpg" style="height:40px;float:right;"/>
+	<h3 class="heading text-right">STUDENTS</h3> -->
+<section class="top_menu_back">
+       <div class='row'>
+	   <div class="col-sm-2"></div>
+        <div class='col-sm-20 col-xs-24'>
+			<nav class="navbar navbar-inverse top_menu">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle mobile_button_nav" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+<!--				  <a class="navbar-brand" href="#">WebSiteName</a>-->
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav nav_links">
+					<li class=""><a href="index.html" class="">Home</a></li>
+                    <li class=""><a href="about.html">About Me</a></li>
+					<li class=""><a href="projects.html">Projects</a></li>
+					<li class=""><a href="sketches.html">Sketches</a></li>
+				  </ul>
+<!--
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				  </ul>
+-->
+				</div>
+			  </div>
+			</nav>
+         </div>
+		 
+		 <div class="col-sm-2"></div>
+       </div>
+</section>
+</header>
+
+<script>
+$(document).ready(function(){
+/* alert('alert 1');
+$('.nav_links li').addClass('active');
+ $('.nav_links li').click(function(e) { 
+  alert('check');
+    		    $('.nav_links li').addClass('active').siblings().removeClass('active');
+    		}); */
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('active');
+    }
+  });
+});
+}); 
+</script>
+</body>
+</html>

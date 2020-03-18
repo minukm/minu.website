@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='bootstrap/css/bootstrap.css' rel='stylesheet'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+ <script src='function.js'></script>
+  <script src='bootstrap/js/bootstrap.js'></script>
+  <title>home page</title>
+   <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_only.css" rel="stylesheet">
+   <style>
+            .check{
+                height: 25%;
+            }
+          
+        </style>
+</head>
+<body>
+
+<div id="headerInclude"></div>
+      <div class="row nospace back">
+       <div class="row nospace check">
+           
+        </div>
+            <div class="row nospace">
+
+                <div class="col-md-12 ">
+                      <a href="projects.html" class="navbutton animated-button victoria-two nav1">Projects</a>
+                </div>
+
+                <div class="col-md-12 ">     
+				 <a href="https://www.behance.net/minu07" target="_blank" class="navbutton animated-button victoria-two ">Behance Profile</a>                     
+                </div>
+
+            </div>
+        </div>
+
+
+<!--
+<footer>
+<table>
+   <tr>
+        <th><a href="file:///C:/Users/minkumari/Desktop/bootstrap/bootstrap3.html">Home</a></th>
+        <th><a href="file:///C:/Users/minkumari/Desktop/bootstrap/bootstrap3.html">About US</a></th>
+        <th><a href="file:///C:/Users/minkumari/Desktop/bootstrap/bootstrap3.html">Events</a></th>
+        <th><a href="file:///C:/Users/minkumari/Desktop/bootstrap/bootstrap3.html">News</a></th>
+        <th><a href="file:///C:/Users/minkumari/Desktop/bootstrap/bootstrap3.html">Gallery</a></th>
+   </tr>
+</table>
+</footer>
+-->
+
+<script>
+$(document).ready(function(){
+
+$.get('header.html').success(function(data)
+ {
+ //alert(data);
+      $('#headerInclude').load('header_home.html');
+   // alert("finished");
+ });
+
+ });
+ 
+
+
+</script>
+
+</body>
+</html>
